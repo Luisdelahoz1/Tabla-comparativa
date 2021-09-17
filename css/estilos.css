@@ -1,0 +1,154 @@
+* {
+  margin: 2px;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  height: 95%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.tabla {
+  background: rgba(0, 0, 0, 0.7);
+  width: 30%;
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-bottom: 15px;
+  height: 70%;
+}
+
+.tabla:hover {
+  transform: scale(1.05);
+}
+
+.titulo {
+  background: #dd0031;
+  padding: 15px 0;
+}
+
+.titulo .fa {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.titulo .table_title {
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.sub-title {
+  padding: 10px 0;
+}
+
+.sub-title .table_subtitle {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.sub-title .table_subtitle {
+  font-size: 20px;
+}
+
+.descripcion .list_check li {
+  list-style: none;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.descripcion .fa-check {
+  color: #00cd2a;
+}
+
+.descripcion .fa-times {
+  color: #ff4032;
+}
+
+.enlace .link {
+  display: inline-block;
+  text-decoration: none;
+  background: #dd0031;
+  color: #fff;
+  margin: 40px 0;
+  padding: 10px 40px;
+  border-radius: 50px;
+  font-size: 22px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.tabla:nth-child(2) .titulo,
+.tabla:nth-child(2) .enlace a {
+  background: #a6120d;
+}
+
+.tabla:nth-child(2) .sub-title .table_subtitle {
+  color: #ffffff;
+}
+
+.tabla:nth-child(3) .titulo,
+.tabla:nth-child(3) .enlace .link {
+  background: #0ec259;
+}
+
+.tabla:nth-child(4) .titulo,
+.tabla:nth-child(4) .enlace .link {
+  background: #e04e39;
+}
+
+.tabla:nth-child(5) .titulo,
+.tabla:nth-child(5) .enlace .link {
+  background: #ff3e00;
+}
+
+@media screen and (max-width: 750px) {
+  .tabla {
+    width: 225px;
+  }
+
+  .titulo .fa {
+    font-size: 40px;
+    margin-bottom: 5px;
+  }
+
+  .titulo .table_title {
+    font-size: 18px;
+  }
+
+  .sub-title {
+    padding: 4px 0;
+  }
+
+  .sub-title .table_subtitle {
+    font-size: 20px;
+  }
+
+  .enlace .link {
+    margin: 20px 0;
+    padding: 8px 20px;
+    font-size: 18px;
+  }
+
+  .enlace .link:hover {
+    transform: scale(1.05);
+  }
+
+  .tabla:hover {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .tabla {
+    width: 300px;
+  }
+}
